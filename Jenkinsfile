@@ -109,7 +109,7 @@ pipeline {
             echo 'Slack notifications.'
             slackSend channel : '#bayloncicd',
                 color: COLOR_MAP[currentBuild.currentResult],
-                message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME}" Build ${env.BUILD_NUMBER} \n More info at: ${env.BUILD_URL}
+                message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} Build ${env.BUILD_NUMBER} \n More info at: ${env.BUILD_URL}"
 
 
         }
