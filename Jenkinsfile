@@ -104,7 +104,8 @@ pipeline {
             }
         }
     }
-    Post {
+
+    post {
         always {
             echo 'Slack notifications.'
             slackSend channel : '#bayloncicd',
